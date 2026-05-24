@@ -27,6 +27,19 @@ LLMs have several key limitations that RAG helps overcome:
 4. **Vector Store:** These vectors are stored in a database where they can be searched based on similarity.
 5. **Retrieval & Generation:** When a user asks a question, the system finds the most relevant chunks, adds them to the query (augmentation), and sends everything to the LLM to generate the final answer.
 
+### **RAG (Retrieval-Augmented Generation)** 
+* **Purpose:** Solves the issue of LLM "knowledge cutoff" when dealing with **static, private, or massive datasets** (e.g., company internal policies).
+* **How it works:** Instead of retraining the model, documents are chunked and converted into **vectors**. These are stored in a vector database. When a user asks a question, the system retrieves the most relevant "chunks" of data and feeds them into the prompt's context window to generate an accurate answer.
+
+### **MCP (Model Context Protocol)** 
+* **Purpose:** Designed for **dynamic, real-time data** where information changes frequently (e.g., live cricket scores, weather, or booking services like railway tickets).
+* **How it works:** It acts as a standardized interface to connect LLMs to various external **tools and agents**. By using a common configuration format, it becomes much easier to integrate multiple tools without needing custom, complex setups for each one.
+
+### **Key Takeaway**
+* LLMs are "pre-trained" and lack real-time access to new information.
+* Use **RAG** when your data is stable and static.
+* Use **MCP** when your application needs to interact with live, dynamic tools and external APIs.
+
 ### Difference betweek RAG and MCP
 
 <img width="1693" height="1041" alt="image" src="https://github.com/user-attachments/assets/8a92d4a7-af16-43d4-8714-315aedc6c4fc" />
