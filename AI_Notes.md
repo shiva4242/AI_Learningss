@@ -26,3 +26,8 @@ LLMs have several key limitations that RAG helps overcome:
 3. **Embedding:** These chunks are converted into numerical vectors.
 4. **Vector Store:** These vectors are stored in a database where they can be searched based on similarity.
 5. **Retrieval & Generation:** When a user asks a question, the system finds the most relevant chunks, adds them to the query (augmentation), and sends everything to the LLM to generate the final answer.
+
+### Difference betweek RAG and MCP
+
+<img width="1693" height="1041" alt="image" src="https://github.com/user-attachments/assets/8a92d4a7-af16-43d4-8714-315aedc6c4fc" />
+
